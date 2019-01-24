@@ -9,17 +9,28 @@ a:focus,
 a:hover {
   color: #fff;
 }
-
-/* Custom default button */
-.btn-secondary,
-.btn-secondary:hover,
-.btn-secondary:focus {
-  color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #fff;
-  border: .05rem solid #fff;
+/* home */
+.club{
+  height:900px ;
+}
+.cast{
+  height: 1500px;
 }
 
+.story{
+  height: 900px;
+}
+
+.loading{
+  padding-top: 250px;
+}
+/*
+Cast
+*/
+
+.contact{
+  height: 900px;
+}
 
 /*
  * Base structure
