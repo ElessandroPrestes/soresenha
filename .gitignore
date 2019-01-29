@@ -1,6 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 node_modules/
 =======
+=======
+.vscode
+>>>>>>> master
 node_modules/
 packpage.json
 packpage-lock.json
