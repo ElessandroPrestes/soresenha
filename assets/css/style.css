@@ -1,0 +1,113 @@
+/*links*/
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+/* Animação javascript puro */
+[data-anime]{
+  opacity: 0; 
+  transition: .9s;
+}
+[data-anime="top"]{
+  transform: translate3d(0, -50px, 0);
+}
+[data-anime="right"]{
+  transform: translate3d(50px, 0, 0);
+}
+[data-anime="bottom"]{
+  transform:translate3d(-0px, 0, 0);
+}
+[data-anime="left"]{
+  transform: translate3d(-50px, 0, 0);
+}
+
+
+.flash{
+  position:absolute;
+  top:80vh;
+  margin-left:45%;
+  margin-right:50%;
+  animation-name: flash;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes flash{
+ 0%{
+      color:white;
+ }
+ 50%{
+  color: rgb(218, 165, 32);
+
+ } 
+ 100%{
+      color:white;
+ }
+}
+
+/*club*/
+.cast{
+  background-image: linear-gradient(to bottom right, black 60% , white);
+}
+
+.navbar{
+  opacity: 0.8;
+}
+.nav-span{
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.btn-back-to-top {
+  bottom: 30px;
+  cursor: pointer;
+  position: fixed;
+  right: 10px;
+  z-index: 1;
+}
+
+
+
+/*cast*/
+.cast , h1{
+  padding: 3rem 0 5rem 0;
+}
+.list-group-item{
+  color: black;
+}
+
+
+.jobson{
+  opacity: 0.5;
+}
+
+.card-text{
+  color:#161616;
+}
+
+/*story*/
+.story{
+  background-image: linear-gradient(to bottom left, black 60%, white );
+
+}
+.story h4, article, p{
+  color: white;
+}
+
+/*contact */
+.contact{
+  
+}
+
+
+.footer {
+   
+  min-height: 20px;
+  background-color: #000;
+  padding: 15px 0 10px 0;
+  bottom: 0;
+}
+
+.footer p {
+  color: #FFFFFF;
+}
