@@ -83,13 +83,14 @@ a:hover {
   color: black;
 }
 
+.name{
+  font-weight: bold;
+}
 .jobson{
   opacity: 0.5;
 }
 
-.card-text{
-  color:#161616;
-}
+
 
 /*story*/
 .story{
