@@ -1,0 +1,52 @@
+body{
+    font-family: "/assets/fonts/Aileron/Aileron-Light.ttf", Arial, Helvetica, sans-serif;
+}
+/*Club*/
+nav strong{
+    color: #FFFFFF;
+  }
+  .nav-span{
+    font-size: 1rem;
+    font-weight: bold;
+    color: #FFFFFF;
+  }
+
+  .title-banner{
+    margin-top: 5vh;
+    color: #fff;
+    font-weight: 800;
+    font-size: 3rem;
+    letter-spacing: 15px;
+    text-shadow: 2px 3px 1px #000;
+}
+/*Story*/
+.story h1{
+    padding: 4rem !important;
+  }
+  .story h1, article, p{
+    color:white;
+  }
+  .text-story{
+    line-height: 2rem;
+    text-indent: 2rem;
+    font-size: 1.2rem;
+    letter-spacing: normal;
+    text-align: justify !important;
+  } 
+  /*Cast*/
+  .cast , h1{
+    color:white;
+  }
+  .name{
+    font-weight: bold;
+  }
+  /*Contact*/
+  .contact h1{
+    padding-top: 3rem !important;
+    color: black;
+  }
+
+  .footer p {
+    color: #FFFFFF;
+  }
+  
