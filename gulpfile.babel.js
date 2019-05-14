@@ -12,7 +12,7 @@ gulp.task('concss', () =>{
     return gulp.src('assets/css/*.css')
     .pipe(concss("style.css"))
     .on("error", notify.onError("Error: <%= error.message %>"))
-    .pipe(gulp.dest('dist/css/concat/'));
+    .pipe(gulp.dest('dist/css/concat'));
 });
 
 gulp.task('mincss', () =>{
@@ -20,7 +20,7 @@ gulp.task('mincss', () =>{
   .pipe(rename('style.min.css'))
   .pipe(css({compatibilty: 'ie8'}))
   .on("error", notify.onError("Error: <%= error.message %>"))
-  .pipe(gulp.dest('dist/css/minify/'));
+  .pipe(gulp.dest('dist/css/minify'));
 });
 
 gulp.task('conjs', () => {
@@ -38,8 +38,9 @@ gulp.task('minjs', () =>{
   .pipe(gulp.dest('dist/js/minify'))
 });
 
-gulp.task('default',['concss','mincss','minjs'], () => {
+gulp.task('default',['concss','mincss','conjs','minjs'], () => {
     gulp.watch('assets/css/*css', ['concss']);
     gulp.watch('dist/css/concat/style.css', ['mincss']);
-    gulp.watch('js/index.js', ['minjs']);
+    gulp.watch('assets/js/*js', ['conjs']);
+    gulp.watch('dist/js/concat/main.js', ['minjs']);
 });
