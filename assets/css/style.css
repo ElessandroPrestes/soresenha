@@ -8,15 +8,31 @@ a:hover {
 }
 /*Club*/
 .club{
-  margin-top:8vh;
+  min-height: 100vh;
+  max-width: 100vw;
+  background-color: rgb(25, 25, 25);
 }
 .navbar-toggler-icon{
   color: #FFFFFF !important;
 }
 .navbar{
-  background-color:  rgb(20, 20, 20) !important;
+  background-color:  rgb(25, 25, 25) !important;
+}
+.navbar-toggler:focus{
+  outline: none;
+}
+.fa , .fa-bars{
+  color:#19e5e6 !important;
+}
+.line{
+  border-bottom: 1px solid rgb(25, 229, 230);
+}
+.nav-item:hover .line{
+  display: block;
+  transition: 2s;
 }
 .banner{
+  margin-top:20vh;
   padding: 0 !important;
 }
 .back-banner{
@@ -36,18 +52,27 @@ a:hover {
 /*story*/
 .story{
   background: linear-gradient(340deg, black 60%, white); 
-  padding: 7vh;
+  padding: 10vh;
+}
+.story h1{
+  margin: 10vh auto;
+}
+.carousel-control-prev, .carousel-control-prev-icon{
+  color: white;
 }
 .carousel{
   margin: 10vh auto;
 }
+.map{
+  height:100vh;
+}
 /*cast*/
 .cast{
   background: linear-gradient(25deg, black 70% , white);
-  padding-top: 15vh !important;
+  padding: 8vh !important;
 }
 .cast h1{
-  padding-bottom: 10vh;
+  margin: 10vh auto;
 }
 .arrow-down{
   width: 100vw;
@@ -59,13 +84,13 @@ a:hover {
   width:40px;
   height: 40px;
   position: absolute;
-  margin: auto;
+  margin: 70vh auto;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  border-right: 4px solid #fff;
-  border-bottom: 4px solid #fff;
+  border-right: 4px solid rgb(255, 255, 255);
+  border-bottom: 4px solid rgb(255,255,255);
   -webkit-transform: rotate(45deg);
   transform:rotate(45deg);
   -webkit-animation: 3s arrow infinete ease;
@@ -100,15 +125,24 @@ a:hover {
   padding-top: 10vh;
   color: black;
 }
+.contact h1{
+  margin: 10vh auto;
+}
 .contact .card{
   margin: 2vh 0 !important;
 }
 .contact .card:hover{
   border-color:rgb(128, 128, 128);
 }
-.contact .fab{
-  color: rgb(52, 175, 35);
+.fab{
   font-size: 3em;
+  padding-bottom: 8vh;
+}
+.fa-whatsapp-square{
+  color: rgb(52, 175, 35);
+}
+.fa-facebook-square{
+  color: rgb(59, 89, 152);
 }
 .footer {
   margin-top: 10vh !important;

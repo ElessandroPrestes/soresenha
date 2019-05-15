@@ -1,5 +1,5 @@
 body{
-    font-family: "/assets/fonts/Aileron/Aileron-Light.ttf", Arial, Helvetica, sans-serif;
+    font-family: "../fonts/Aileron/Aileron-UltraLight.ttf";
 }
 /*Club*/
 nav strong{
@@ -10,19 +10,17 @@ nav strong{
     font-weight: bold;
     color: #FFFFFF;
   }
-
   .title-banner{
-    margin-top: 5vh;
+    margin-top: 25vh;
     color: #fff;
     font-weight: 800;
     font-size: 3rem;
+    text-align:center;
     letter-spacing: 15px;
     text-shadow: 2px 3px 1px #000;
 }
 /*Story*/
-.story h1{
-    padding: 4rem !important;
-  }
+
   .story h1, article, p{
     color:white;
   }
@@ -42,7 +40,6 @@ nav strong{
   }
   /*Contact*/
   .contact h1{
-    padding-top: 3rem !important;
     color: black;
   }
 

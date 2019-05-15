@@ -14544,7 +14544,6 @@ return jQuery;
 //Coloca o botão em uma varivel
 var btn_subir = $(".btn-back-to-top");
 
-
 //Faz a primeira verificacao ao carregar a pagina
 $(document).ready(function(){
     var minhaposicao = $(this).scrollTop();
@@ -14596,4 +14595,14 @@ window.addEventListener('scroll', debounce(function(){
 }
 
 
+//Api google
+let map;
+function initApi (){
+     map = new google.maps.Map(document.querySelector(['apimap']),{
+        center:{lat:-24.715931, lng:-53.726861},
+        zoom:8
+     });
+        
+    
+}
 
