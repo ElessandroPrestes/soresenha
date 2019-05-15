@@ -52,7 +52,7 @@ window.addEventListener('scroll', debounce(function(){
 }
 
 
-//Api google
+/*Api google
 let map;
 function initApi (){
      map = new google.maps.Map(document.querySelector(['apimap']),{
@@ -61,4 +61,4 @@ function initApi (){
      });
     
 }
-
+*/
