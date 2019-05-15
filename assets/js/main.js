@@ -59,7 +59,6 @@ function initApi (){
         center:{lat:-24.715931, lng:-53.726861},
         zoom:8
      });
-        
     
 }
 
