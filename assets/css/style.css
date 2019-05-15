@@ -64,6 +64,7 @@ a:hover {
   margin: 10vh auto;
 }
 .map{
+  margin: 10vh auto;
   height:100vh;
 }
 /*cast*/
@@ -84,7 +85,7 @@ a:hover {
   width:40px;
   height: 40px;
   position: absolute;
-  margin: 70vh auto;
+  margin: 75vh auto;
   top: 0;
   right: 0;
   bottom: 0;

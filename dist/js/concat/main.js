@@ -14595,13 +14595,13 @@ window.addEventListener('scroll', debounce(function(){
 }
 
 
-/*Api google
+/*Api google*/
 let map;
 function initApi (){
-     map = new google.maps.Map(document.querySelector(['apimap']),{
-        center:{lat:-24.715931, lng:-53.726861},
+     map = new google.maps.Map(document.getElementById('apimap'),{
+        center:{lat:-24.715164, lng:-53.726950},
         zoom:8
      });
     
 }
-*/
+
