@@ -14599,7 +14599,7 @@ window.addEventListener('scroll', debounce(function(){
 let map;
 function initApi (){
      map = new google.maps.Map(document.getElementById('apimap'),{
-        center:{lat:-24.715164, lng:-53.726950},
+        center:{lat:-24.716317, lng:-53.727113},
         zoom:8
      });
     
