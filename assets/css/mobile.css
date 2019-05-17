@@ -1,29 +1,74 @@
 
-@media (max-width: 575.98px) {
-    .flash{
+@media only screen and (max-width: 575.98px) and (orientation:landscape){
+    .arrow-down{
+        display: block!important;
+    }
+    .arrow-down::after{
+        width:30px !important;
+        height: 30px !important; 
+    }
+    
+}
+
+@media only screen and (max-width: 575.98px) {
+    .arrow-down{
         display:none;
+    }
+    .title-banner{
+        margin-top:  7vh !important;
     }
     .navbar{
-       opacity: 1;
+        background-color: rgba(255, 0, 0, 0.9);
     }
-    
+    .cast{
+        padding : 3vh !important;
+      }
 }
 
-
-@media (min-width: 576px) and (max-width: 767.98px) {
-    .flash{
-        display:none;
+@media only screen and (max-width: 767.98px) and (orientation:landscape){
+    /*Club*/
+    .title-banner{
+        margin: auto !important;
     }
-   
-    
+    .arrow-down::after{
+        margin:64vh auto !important;
+    }
+    /*Story*/
+    .map{
+        height:70vh !important;
+    }
+    .cast{
+        padding : 1vh !important;
+      }
 }
 
-@media (min-width: 768px) and (max-width: 991.98px) {
-    
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+     .arrow-down::after{
+         display: none;
+     }
+     .title-banner{
+         margin-top: 12vh !important;
+     }
+     .cast{
+        padding : 3vh !important;
+      }
 }
 
-@media (min-width: 992px) and (max-width: 1199.98px) {
-    .flash{
-        display:none;
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+    .arrow-down::after{
+        display: none;
     }
+    .banner{
+        margin-top:10vh !important;
+    }
+    .title-banner{
+        margin-top:20vh !important;
+    }
+    .cast{
+        padding : 3vh !important;
+      }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    
 }

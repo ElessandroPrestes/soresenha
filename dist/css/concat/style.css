@@ -9999,30 +9999,91 @@ a.text-dark:focus {
 }
 
 /*# sourceMappingURL=bootstrap.css.map */
-@media (max-width: 575.98px) {
-  .flash {
+@media only screen and (max-width: 575.98px) and (orientation:landscape) {
+  .arrow-down {
+    display: block!important;
+  }
+
+  .arrow-down::after {
+    width: 30px !important;
+    height: 30px !important;
+  }
+}
+
+@media only screen and (max-width: 575.98px) {
+  .arrow-down {
     display: none;
+  }
+
+  .title-banner {
+    margin-top: 7vh !important;
   }
 
   .navbar {
-    opacity: 1;
+    background-color: rgba(255, 0, 0, 0.9);
+  }
+
+  .cast {
+    padding: 3vh !important;
   }
 }
 
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .flash {
+@media only screen and (max-width: 767.98px) and (orientation:landscape) {
+  /*Club*/
+
+  .title-banner {
+    margin: auto !important;
+  }
+
+  .arrow-down::after {
+    margin: 64vh auto !important;
+  }
+
+  /*Story*/
+
+  .map {
+    height: 70vh !important;
+  }
+
+  .cast {
+    padding: 1vh !important;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  .arrow-down::after {
     display: none;
   }
+
+  .title-banner {
+    margin-top: 12vh !important;
+  }
+
+  .cast {
+    padding: 3vh !important;
+  }
 }
 
-@media (min-width: 768px) and (max-width: 991.98px) {
-
-}
-
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  .flash {
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  .arrow-down::after {
     display: none;
   }
+
+  .banner {
+    margin-top: 10vh !important;
+  }
+
+  .title-banner {
+    margin-top: 20vh !important;
+  }
+
+  .cast {
+    padding: 3vh !important;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
 }
 /*links*/
 
@@ -10090,42 +10151,6 @@ a:hover {
   color: rgb(25, 229, 230);
 }
 
-/*story*/
-
-.story {
-  background: linear-gradient(340deg, black 60%, white);
-  padding: 10vh;
-}
-
-.story h1 {
-  margin: 10vh auto;
-}
-
-.carousel-control-prev,
-.carousel-control-prev-icon {
-  color: white;
-}
-
-.carousel {
-  margin: 10vh auto;
-}
-
-.map {
-  margin: 10vh auto;
-  height: 50vh;
-}
-
-/*cast*/
-
-.cast {
-  background: linear-gradient(25deg, black 70% , white);
-  padding: 8vh !important;
-}
-
-.cast h1 {
-  margin: 10vh auto;
-}
-
 .arrow-down {
   width: 100vw;
   margin: 0 auto;
@@ -10137,7 +10162,7 @@ a:hover {
   width: 40px;
   height: 40px;
   position: absolute;
-  margin: 75vh auto;
+  margin: 72vh auto;
   top: 0;
   right: 0;
   bottom: 0;
@@ -10170,12 +10195,58 @@ a:hover {
   }
 }
 
+/*Story*/
+
+.story {
+  background: linear-gradient(340deg, black 60%, white);
+}
+
+.carousel {
+  padding: 0;
+}
+
+.story h1:nth-child(1) {
+  margin-top: 12vh;
+}
+
+.story h1 {
+  margin-bottom: 3vh;
+}
+
+.map {
+  margin: 5vh auto;
+  height: 50vh;
+}
+
+/*cast*/
+
+.cast {
+  background: linear-gradient(25deg, black 70% , white);
+}
+
+.cast {
+  padding: 12vh;
+}
+
+.cast h1 {
+  margin-top: 12vh;
+  margin-bottom: 5vh;
+}
+
 .list-group-item {
   color: black;
 }
 
+.cast article {
+  padding: 2px !important;
+}
+
 .jobson {
   opacity: 0.5;
+}
+
+.division {
+  margin: 20px;
 }
 
 /*contact */
@@ -10186,11 +10257,11 @@ a:hover {
 }
 
 .contact h1 {
-  margin: 10vh auto;
+  margin: 1vh auto;
 }
 
 .contact .card {
-  margin: 2vh 0 !important;
+  margin: 1vh  !important;
 }
 
 .contact .card:hover {
