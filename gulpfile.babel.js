@@ -5,7 +5,7 @@ import concss from'gulp-concat-css';
 import conjs from'gulp-concat';
 import notify from'gulp-notify';
 import css from'gulp-clean-css';
-import uglify from 'gulp-uglify-es';
+import uglify from 'gulp-uglify';
 import rename from 'gulp-rename';
 
 gulp.task('concss', () =>{
@@ -34,7 +34,6 @@ gulp.task('minjs', () =>{
   return gulp.src('dist/js/concat/main.js')
   .pipe(rename('main.min.js'))
   .pipe(uglify())
-  .on("error", notify.onError("Error: <%= error.message %>"))
   .pipe(gulp.dest('dist/js/minify'))
 });
 
