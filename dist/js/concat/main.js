@@ -14587,12 +14587,12 @@ function animeScroll(){
 
 animeScroll();
 
-//Verifica se tem algum evento de scroll acontecendo.
+/*Verifica se tem algum evento de scroll acontecendo.
 if(target.length){
 window.addEventListener('scroll', debounce(function(){
     animeScroll();
     },200));
-}
+}*/
 
 
 /*Api google*/
