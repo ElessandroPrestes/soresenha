@@ -10000,18 +10000,46 @@ a.text-dark:focus {
 
 /*# sourceMappingURL=bootstrap.css.map */
 @media (max-width: 575.98px) {
-  .flash {
-    display: none;
+  /*Club*/
+
+  .arrow-down::after {
+    margin-top: 40vh !important;
   }
 
-  .navbar {
-    opacity: 1;
+  .title-banner {
+    margin-top: 10vh !important;
+  }
+
+  .btn-back-to-top {
+    right: 2vw;
+  }
+
+  /*Cast*/
+
+  .story {
+    padding: 5vw !important;
   }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .flash {
-    display: none;
+  /*Club*/
+
+  .arrow-down::after {
+    margin-top: 50vh !important;
+  }
+
+  .btn-back-to-top {
+    right: 4vw !important;
+  }
+
+  .title-banner {
+    margin-top: 15vh !important;
+  }
+
+  /*Story*/
+
+  .story {
+    padding: 0 5vw !important;
   }
 }
 
@@ -10019,10 +10047,8 @@ a.text-dark:focus {
 
 }
 
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  .flash {
-    display: none;
-  }
+@media (min-width: 992px) and (max-width: 1200.00px) {
+
 }
 /*links*/
 
@@ -10082,7 +10108,7 @@ a:hover {
   bottom: 30px;
   cursor: pointer;
   position: fixed;
-  right: 10px;
+  right: 1vw;
   z-index: 1;
 }
 
@@ -10094,10 +10120,18 @@ a:hover {
 
 .story {
   background: linear-gradient(340deg, black 60%, white);
-  padding: 10vh;
 }
 
-.story h1 {
+.story h1:nth-child(2) {
+  margin: 10vh auto;
+}
+
+.story h1:first-child {
+  margin-bottom: 10vh;
+}
+
+.carousel,
+.map {
   margin: 10vh auto;
 }
 
@@ -10106,13 +10140,8 @@ a:hover {
   color: white;
 }
 
-.carousel {
-  margin: 10vh auto;
-}
-
 .map {
-  margin: 10vh auto;
-  height: 50vh;
+  height: 70vh;
 }
 
 /*cast*/
@@ -10137,7 +10166,7 @@ a:hover {
   width: 40px;
   height: 40px;
   position: absolute;
-  margin: 75vh auto;
+  margin: 72vh auto;
   top: 0;
   right: 0;
   bottom: 0;
@@ -10198,7 +10227,7 @@ a:hover {
 }
 
 .fab {
-  font-size: 3em;
+  font-size: 4em;
   padding-bottom: 8vh;
 }
 
@@ -10239,7 +10268,8 @@ a:hover {
   transform: translate3d(-50px, 0, 0);
 }
 body {
-  font-family: "../fonts/Aileron/Aileron-UltraLight.ttf";
+  font-family: "../fonts/Aileron-Light.ttf";
+  /*blackitalic,*/
 }
 
 /*Club*/
@@ -10255,7 +10285,7 @@ nav strong {
 }
 
 .title-banner {
-  margin-top: 25vh;
+  margin-top: 24vh;
   color: #fff;
   font-weight: 800;
   font-size: 3rem;

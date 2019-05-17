@@ -1,19 +1,39 @@
 
 @media (max-width: 575.98px) {
-    .flash{
-        display:none;
+    /*Club*/
+    .arrow-down::after{
+        margin-top: 40vh !important;
     }
-    .navbar{
-       opacity: 1;
+    .title-banner{
+        margin-top: 10vh !important;
+    }
+    .btn-back-to-top{
+        right: 2vw;
+    }
+    /*Cast*/
+    .story{
+        padding: 5vw !important;
     }
     
 }
 
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-    .flash{
-        display:none;
+    /*Club*/
+    .arrow-down::after{
+        margin-top: 50vh !important;
     }
+    .btn-back-to-top{
+        right: 4vw !important;
+    }
+    .title-banner{
+        margin-top: 15vh !important;
+    }
+    /*Story*/
+    .story{
+        padding: 0 5vw !important;
+    }
+    
    
     
 }
@@ -22,8 +42,6 @@
     
 }
 
-@media (min-width: 992px) and (max-width: 1199.98px) {
-    .flash{
-        display:none;
-    }
+@media (min-width: 992px) and (max-width: 1200.00px) {
+    
 }
