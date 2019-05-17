@@ -43,7 +43,7 @@ a:hover {
   bottom: 30px;
   cursor: pointer;
   position: fixed;
-  right: 1vw;
+  right: 10px;
   z-index: 1;
 }
 .btn-back-to-top:hover{
@@ -52,23 +52,20 @@ a:hover {
 /*story*/
 .story{
   background: linear-gradient(340deg, black 60%, white); 
+  padding: 10vh;
 }
-.story h1:nth-child(2){
-  margin: 10vh auto;
-}
-.story h1:first-child{
-  margin-bottom: 10vh;
-}
-
- .carousel, .map{
+.story h1{
   margin: 10vh auto;
 }
 .carousel-control-prev, .carousel-control-prev-icon{
   color: white;
 }
-
+.carousel{
+  margin: 10vh auto;
+}
 .map{
-  height:70vh;
+  margin: 10vh auto;
+  height:50vh;
 }
 /*cast*/
 .cast{
@@ -88,7 +85,7 @@ a:hover {
   width:40px;
   height: 40px;
   position: absolute;
-  margin: 72vh auto;
+  margin: 75vh auto;
   top: 0;
   right: 0;
   bottom: 0;
@@ -139,7 +136,7 @@ a:hover {
   border-color:rgb(128, 128, 128);
 }
 .fab{
-  font-size: 4em;
+  font-size: 3em;
   padding-bottom: 8vh;
 }
 .fa-whatsapp-square{

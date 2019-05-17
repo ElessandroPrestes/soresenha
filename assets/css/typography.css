@@ -1,6 +1,5 @@
 body{
-    font-family: "../fonts/Aileron-Light.ttf";
-    /*blackitalic,*/
+    font-family: "../fonts/Aileron/Aileron-UltraLight.ttf";
 }
 /*Club*/
 nav strong{
@@ -12,7 +11,7 @@ nav strong{
     color: #FFFFFF;
   }
   .title-banner{
-    margin-top: 24vh;
+    margin-top: 25vh;
     color: #fff;
     font-weight: 800;
     font-size: 3rem;
