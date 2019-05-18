@@ -551,6 +551,13 @@
 
   <script src="dist/js/minify/main.min.js"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA64BH7wb_RLDBfiEAIe9a89KX_E5d6H3E&callback=initApi">
+    var mapgoo;
+    function initApi(){
+     mapgoo = new google.maps.Map(document.getElementById('apimap'),{
+        center:{lat:-24.716317, lng:-53.727113},
+        zoom:8
+     });  
+    }
   </script>
 
   

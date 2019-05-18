@@ -28,13 +28,5 @@ btn_subir.click(function(){
     $('html,body').animate({scrollTop:0},500);
 });
 
-/*Api google*/
-var mapgoo;
-function initApi (){
-     mapgoo = new google.maps.Map(document.getElementById('apimap'),{
-        center:{lat:-24.716317, lng:-53.727113},
-        zoom:8
-     });
-    
-}
+
 
