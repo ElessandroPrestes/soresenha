@@ -5,7 +5,7 @@ import concss from'gulp-concat-css';
 import conjs from'gulp-concat';
 import notify from'gulp-notify';
 import css from'gulp-clean-css';
-import uglify from 'gulp-uglify';
+import uglify from 'gulp-uglify-es';
 import rename from 'gulp-rename';
 
 gulp.task('concss', () =>{

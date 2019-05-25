@@ -72,10 +72,10 @@
           </div> 
 
         <!--Botão voltar ao topo-->
-        <div class="btn-back-to-top">
+        <div data-js="js-btn-back" id="btn-top" class="btn-back">
             <i class="fas fa-angle-double-up fa-2x" title="Voltar ao Topo"></i>
         </div>
-        <div class="arrow-down"></div>
+        <div class="arrow-down" id="arrow"></div>
 
     </section>
     <div id="story"></div>
@@ -177,10 +177,10 @@
           </div>
 
         </div>
-<!--Api Maps--> 
+
         <div class="row">
           <div class="col-12 col-sm-12 col-md-12 offset-lg-1 col-lg-10">
-            <div class="map" id="apimap"></div>
+            <div  class="arena"></div>
           </div>
         </div>
       </div>
@@ -479,8 +479,9 @@
 
     </section>
     <div class="division"></div>
+    <div id="contact"></div>
     <section>
-      <div class="container-fluid contact text-center" id="contact">
+      <div class="container-fluid contact text-center">
         <div class="row">
           <h1 class="col-sm-12 col-md-12 col-lg-12">Entre em contato, através de nossas midias socias.</h1>
 
@@ -540,27 +541,15 @@
       </div>
     </section>
 
-  
-
   <footer>
     <div class="footer inner text-center">
-      <p><i class="far fa-copyright"></i> 2005-2019 - Só Resenha FC.
+      <p>Só Resenha FC &nbsp;<i class="far fa-copyright"></i>&nbsp;2019
          by<a href="https://elessandroprestes.github.io/e10/" target="blank"><img cla src="assets/img/dev/E10-Dev.png"></p>
     </div>
   </footer>
 
   <script src="dist/js/minify/main.min.js"></script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA64BH7wb_RLDBfiEAIe9a89KX_E5d6H3E&callback=initApi">
-    var mapgoo;
-    function initApi(){
-     mapgoo = new google.maps.Map(document.getElementById('apimap'),{
-        center:{lat:-24.716317, lng:-53.727113},
-        zoom:8
-     });  
-    }
-  </script>
-
-  
+    
 </body>
 
 </html>

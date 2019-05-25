@@ -1,32 +1,24 @@
-//Coloca o botão em uma varivel
-var btn_subir = $(".btn-back-to-top");
+(function (win, doc){
+  "use strict";  
 
-//Faz a primeira verificacao ao carregar a pagina
-$(document).ready(function(){
-    var minhaposicao = $(this).scrollTop();
-    if(minhaposicao >=200){
-        btn_subir.fadeIn();
-    }
-    else{
-        btn_subir.fadeOut();
-    }
+//let btn = doc.querySelector('[js-btn-back]');
+
+win.addEventListener("scroll", () =>{
+  var btn = doc.getElementById("arrow");
+
+  if(btn.scrollTop() >=300){
+    btn.style.display="none";
+  }else{
+    btn.style.display="block";
+  }
 });
 
-//Fica monitorando a rolagem de pagina
-$(window).scroll(function(){
-    var minhaposicao = $(this).scrollTop();
-    
-    if(minhaposicao >=100){
-        btn_subir.fadeIn();
-    }
-    else{
-        btn_subir.fadeOut();
-    }
-});
-
-btn_subir.click(function(){
-    $('html,body').animate({scrollTop:0},500);
+btn.addEventListener("click", () =>{
+  ('html', 'body').animate({scrollTop:0}, 800);
+  return false;
 });
 
 
 
+
+},(window, document));
