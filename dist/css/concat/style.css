@@ -10109,6 +10109,7 @@ a:hover {
 
 .navbar {
   background-color: rgb(25, 25, 25) !important;
+  min-height: 10vh;
 }
 
 .navbar-toggler:focus {
@@ -10126,11 +10127,11 @@ a:hover {
 
 .nav-item:hover .line {
   display: block;
-  transition: 2s;
+  transition: 1s;
 }
 
 .banner {
-  margin-top: 22vh;
+  margin-top: 16vh;
   padding: 0 !important;
 }
 
@@ -10139,11 +10140,11 @@ a:hover {
 }
 
 .btn-back-to-top {
-  color: rgb(86, 86, 86);
+  color: rgb(25, 25, 25);
   bottom: 30px;
   cursor: pointer;
   position: fixed;
-  right: 10px;
+  right: 1vw;
   z-index: 1;
 }
 
@@ -10198,7 +10199,11 @@ a:hover {
 /*Story*/
 
 .story {
-  background: linear-gradient(340deg, black 60%, white);
+  background: linear-gradient(to bottom,  #ffffff 20%, rgb(236, 235, 235));
+}
+
+.f-story {
+  margin-bottom: 10vh;
 }
 
 .carousel {
@@ -10213,32 +10218,36 @@ a:hover {
   margin-bottom: 3vh;
 }
 
-.map {
-  margin: 5vh auto;
-  height: 70vh;
+.svg-story {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10vw;
 }
 
 /*cast*/
 
 .cast {
-  background: linear-gradient(25deg, black 70% , white);
+  background-color: rgb(236, 235, 235);
 }
 
 .cast {
-  padding: 12vh;
+  padding-top: 12vh;
+  padding-bottom: 12vh;
 }
 
 .cast h1 {
-  margin-top: 12vh;
   margin-bottom: 5vh;
+}
+
+.cast .card {
+  width: 10rem;
+  border: none;
+  margin-bottom: 3vh;
 }
 
 .list-group-item {
   color: black;
-}
-
-.cast article {
-  padding: 2px !important;
 }
 
 .jobson {
@@ -10247,6 +10256,12 @@ a:hover {
 
 .division {
   margin: 20px;
+}
+
+.svg-cast {
+  bottom: 0;
+  width: 100vw;
+  height: 100px;
 }
 
 /*contact */
@@ -10260,8 +10275,13 @@ a:hover {
   margin: 1vh auto;
 }
 
+.contact .col-lg-3 {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
 .contact .card {
-  margin: 1vh  !important;
+  margin-top: 1vh;
 }
 
 .contact .card:hover {
@@ -10283,8 +10303,10 @@ a:hover {
 
 .footer {
   margin-top: 10vh !important;
-  min-height: 10vh;
-  background-color: #000;
+  min-height: 15vh;
+  background-color: rgb(2,83,179);
+  border-top-left-radius: 50% 20%;
+  border-top-right-radius: 50% 20%;
   padding: 15px 0 10px 0;
   bottom: 0;
 }
@@ -10313,6 +10335,14 @@ body {
   font-family: "../fonts/Aileron/Aileron-UltraLight.ttf";
 }
 
+body h1 {
+  color: #000;
+}
+
+article  p {
+  color: #555;
+}
+
 /*Club*/
 
 nav strong {
@@ -10326,7 +10356,7 @@ nav strong {
 }
 
 .title-banner {
-  margin-top: 25vh;
+  margin-top: 20vh;
   color: #fff;
   font-weight: 800;
   font-size: 3rem;
@@ -10336,12 +10366,6 @@ nav strong {
 }
 
 /*Story*/
-
-.story h1,
-article,
-p {
-  color: white;
-}
 
 .text-story {
   line-height: 2rem;
