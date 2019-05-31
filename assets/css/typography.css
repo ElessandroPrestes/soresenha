@@ -1,6 +1,12 @@
 body{
     font-family: "../fonts/Aileron/Aileron-UltraLight.ttf";
 }
+body h1{
+  color: #000;
+}
+article  p{
+  color:#555;
+}
 /*Club*/
 nav strong{
     color: #FFFFFF;
@@ -11,7 +17,7 @@ nav strong{
     color: #FFFFFF;
   }
   .title-banner{
-    margin-top: 25vh;
+    margin-top: 20vh;
     color: #fff;
     font-weight: 800;
     font-size: 3rem;
@@ -20,10 +26,7 @@ nav strong{
     text-shadow: 2px 3px 1px #000;
 }
 /*Story*/
-
-  .story h1, article, p{
-    color:white;
-  }
+  
   .text-story{
     line-height: 2rem;
     text-indent: 2rem;
