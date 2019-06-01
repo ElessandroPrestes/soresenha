@@ -10,13 +10,13 @@ import rename from 'gulp-rename';
 
 gulp.task('concss', () =>{
     return gulp.src('assets/css/*.css')
-    .pipe(concss("style.css"))
+    .pipe(concss("style.con.css"))
     .on("error", notify.onError("Error: <%= error.message %>"))
     .pipe(gulp.dest('dist/css/concat'));
 });
 
 gulp.task('mincss', () =>{
-  return gulp.src('dist/css/concat/style.css')
+  return gulp.src('dist/css/concat/style.con.css')
   .pipe(rename('style.min.css'))
   .pipe(css({compatibilty: 'ie8'}))
   .on("error", notify.onError("Error: <%= error.message %>"))
@@ -39,7 +39,7 @@ gulp.task('minjs', () =>{
 
 gulp.task('default',['concss','mincss','conjs','minjs'], () => {
     gulp.watch('assets/css/*css', ['concss']);
-    gulp.watch('dist/css/concat/style.css', ['mincss']);
+    gulp.watch('dist/css/concat/style.con.css', ['mincss']);
     gulp.watch('assets/js/*js', ['conjs']);
     gulp.watch('dist/js/concat/main.js', ['minjs']);
 });

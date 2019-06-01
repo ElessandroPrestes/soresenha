@@ -4,6 +4,20 @@ body{
 body h1{
   color: #000;
 }
+h1{
+  font-size: 2.5rem;
+  line-height: 1.4;
+  font-weight: 800;
+}
+h2{
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+article{
+  padding: 2.5rem 0;
+}
 article  p{
   color:#555;
 }
@@ -17,7 +31,7 @@ nav strong{
     color: #FFFFFF;
   }
   .title-banner{
-    margin-top: 20vh;
+    margin-top: 25vh;
     color: #fff;
     font-weight: 800;
     font-size: 3rem;
@@ -25,28 +39,23 @@ nav strong{
     letter-spacing: 15px;
     text-shadow: 2px 3px 1px #000;
 }
+
 /*Story*/
   
   .text-story{
-    line-height: 2rem;
-    text-indent: 2rem;
-    font-size: 1.2rem;
-    letter-spacing: normal;
-    text-align: justify !important;
+    line-height: 2.5rem;
+    font-size: 1.3rem;
+    letter-spacing: .069rem;
   } 
   /*Cast*/
-  .cast , h1{
-    color:white;
-  }
+  
   .name{
     font-weight: bold;
   }
-  /*Contact*/
-  .contact h1{
-    color: black;
-  }
-
+  
   .footer p {
+    font-size:1.3rem;
+    line-height:1rem;
     color: #FFFFFF;
   }
   
