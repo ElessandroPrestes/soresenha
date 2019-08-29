@@ -4,7 +4,7 @@ Em Construção!!!
 
 Projeto voltado  a divulgação do time Só Resenha FC.
 
-Podendo ser acessado no link ao lado - [SoResenha](https://elessandroprestes.github.io/soresenha/)
+Podendo ser acessado no link ao lado - [SoResenha](https://soresenhafc.netlify.com/)
 
 ## Construído com 
 

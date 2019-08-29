@@ -25,13 +25,13 @@ gulp.task('mincss', () =>{
 
 gulp.task('conjs', () => {
   return gulp.src(['assets/js/jquery.js' ,'assets/js/pooper.js','assets/js/bootstrap.js', 'assets/js/main.js'])
-  .pipe(conjs("main.js"))
+  .pipe(conjs("main.con.js"))
   .on("error", notify.onError("Error: <%= error.message %>"))
   .pipe(gulp.dest('dist/js/concat'));
 });
 
 gulp.task('minjs', () =>{
-  return gulp.src('dist/js/concat/main.js')
+  return gulp.src('dist/js/concat/main.con.js')
   .pipe(rename('main.min.js'))
   .pipe(uglify())
   .pipe(gulp.dest('dist/js/minify'))
@@ -41,5 +41,5 @@ gulp.task('default',['concss','mincss','conjs','minjs'], () => {
     gulp.watch('assets/css/*css', ['concss']);
     gulp.watch('dist/css/concat/style.con.css', ['mincss']);
     gulp.watch('assets/js/*js', ['conjs']);
-    gulp.watch('dist/js/concat/main.js', ['minjs']);
+    gulp.watch('dist/js/concat/main.con.js', ['minjs']);
 });
